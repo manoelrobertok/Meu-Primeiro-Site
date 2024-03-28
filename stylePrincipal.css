@@ -40,8 +40,8 @@ nav{
     background-color: black;
     position: fixed;
     width: 1140px;
-    z-index: 9999;
-    height: 50px;  
+    z-index: 1;
+    
    
 
 }
@@ -51,17 +51,17 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-   
-   
-   
+  
 }
+
 nav li  {
  
     width:100% ;
-    margin: 33%;
+    margin: 25%;
     list-style: none;
     font-size: 1.2rem;
 }
+
 li a{
     font-weight: 300;
     text-decoration: none;
@@ -83,11 +83,6 @@ h1{
     margin-top: 20px;
   
 }
-
-
-
-
-
 
 .logo{
     display: flex;
@@ -479,46 +474,52 @@ and (max-width: 770px ){
     nav{
        
         width: 100%;
-        height: 200px;     
-        padding: 120px;   
+        height: 80px;     
+        padding: 20px;   
         background: none; 
         position: fixed;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.829);
         
     }
 
-    nav ul {
-        flex-direction: column;       
+    nav ul a{
+        display: flex;      
+        margin: 15%; 
     }
 
 .logo{
-    padding-top: 180px;
+    padding-top: 100px;
 }
 
 .slideshow-container{
-    width: 350px;
+    width: 490px;
     
 }
 
 .slideshow-container img{
     width: 100%;
-    height: 280px;
+    height: 320px;
 }
 
 h2{
     width: 360px;
     margin: 100px auto;
+    
+    
 }
 .portifolio{
+    flex-direction: column;
     margin: auto;
     width: 450px;
 }
 
 .portifolio img{
     width: 100%;
-    height: 120px;
+    height: 220px;
     padding: 5px;
 }
+
+
 
 .portifolio span{
     font-size: 18px;
@@ -527,7 +528,7 @@ h2{
 
 
 .texto{
-    margin-top: 0;
+    margin-top: 690px;
 }
 .texto h3{
     font-weight: 300;
