@@ -15,6 +15,15 @@ body{
     background-image: linear-gradient(to right, #0c0606fa, #140F2E, #17142cfb, #0c0606 );
 }
 
+.container{
+    background-image: linear-gradient(to left, #0c06068f, #140F2E,#0c06068f);
+    margin: auto;
+    max-width: 1140px;
+    box-shadow: 0 0 40px 0 #4b6e94;
+    height: 100%;
+    position: relative;  
+}
+
 
 nav{
     display: flex;
@@ -23,6 +32,7 @@ nav{
     background-color: black;
     position: fixed;
     width: 1140px;
+    height: 80px;
     z-index: 1;
 
 }
@@ -30,7 +40,7 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 }
 nav li  {
  
@@ -43,7 +53,7 @@ nav li  {
 li a{
     font-weight: 300;
     text-decoration: none;
-    margin: auto;
+   
     text-align: center;
     transition: 0.3s; 
     color:white;  
@@ -60,7 +70,7 @@ nav a:hover{
 
 .container{
     background-image: linear-gradient(to left, #0c06068f, #140F2E,#0c06068f);
-    margin: auto;
+    margin: 0 auto;
     max-width: 1140px;
     box-shadow: 0 0 40px 0 #4b6e94;
     height: 100%    
@@ -92,6 +102,7 @@ h1{
 }
 
 h2{
+    font-size: 2rem;
     font-weight: 300;
     margin-top: 100px;
     padding: 40px;
@@ -99,17 +110,42 @@ h2{
   
 }
 .txt_sobre{
+    font-size: 1.5rem;
     margin: 0 auto;
-    width: 700px;
+    width: 900px;
+    margin-bottom: 250px;
     
 }
 
+h4{
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #05529e63;
+    border-radius: 20px;
+    padding: 5px;
+}
 
+
+
+
+.etapas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding-top: 200px; 
+    margin: 0 auto;
+      
+}
 
 .cards{
     width: 300px;
     height: 300px;
     margin-top: 40px;
+    
     border-radius: 50%;
 }
 .cards:hover{
@@ -122,72 +158,63 @@ h2{
     margin-bottom: 30px;
 }
 
-
-.portifolio {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;  
-      
-}
-
 .cards span{
     margin: 30px;
     font-size: 24px;
-    
-
 
 }
+
+
 
 
 .texto{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 10px;
     font-size: 24px;
 }
 
 h3{
     width: 960px;
-    margin-top: 180px;
+    margin-top: 280px;
     text-align: center;
     padding: 50px;
-    font-weight: 300;
-    
+    font-weight: 300;    
     border-radius: 10px;
 }
+
+
+
+
+
 
 .telas{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items: center;
-
-    
+    margin-top: 150px;
 }
 
-.tela{
-    width: 200px;
-    height: 200px;
-    margin-top: 40px;
-    border-radius: 10px;
-}
 
 .tela span{
     font-size: 24px;
     font-weight: 200;
+    text-align: center;
 }
 
 .tela img{
-    margin: auto;
+    
     width: 280px;
     height: 260px;
     border-radius: 10px;
     margin-bottom: 0px;
-    box-shadow: 0 0 20px 0 #05519e;
+    box-shadow: 0 0 20px 0 #1c71c5;
 
 }
+
+
+
+
 
 
 
@@ -300,7 +327,9 @@ footer{
 
 
 
-@media(min-width:500px) and (max-width: 834px){
+@media
+(width >= 500px) and 
+(width <= 1200px){
 
     .container{
         display: block;
@@ -311,7 +340,7 @@ footer{
     nav{
        
         width: 100%;
-        height: 80px;     
+        height: 60px;     
         padding: 10px;   
         background: none; 
         position: fixed;
@@ -323,7 +352,7 @@ footer{
         display: flex;       
     }
 
-    nav li{
+    nav li a{
         margin-top: 20px;
     }
 
@@ -335,264 +364,55 @@ footer{
         width: 100%;
         font-size: 22px;
         padding: 40px;
-        padding-bottom: 160px;
+        padding-top: 160px;
     }
 
     h4{
         margin-bottom: 45px;
         font-size: 28px;
         font-weight: 300;
+        padding: 20PX;
+        width: 80%;
        }
 
-    .portifolio{
-        flex-direction: column;        
+
+
+
+    .etapas{
+        flex-direction: column;       
         width: 100%;
-       
-       
+
     }
 
-    
+    .cards{
+        margin: 100px;
+    }
 
     .cards img{
         display:block;
         margin: 0 auto;  
-        
-        
+    
     }
 
     .cards span{
        margin: 0 auto;
-       
-      
 
     }
 
-    .texto h3{
-        padding-top: 650px;
-        font-size: 22px;
-       
-    }
 
+    .texto{
+        width: 100%;
+        padding-top: 1250px;
+    }
 
     .telas{
-    flex-direction: column;
-        
-    }
-
-    .tela{
-        margin: 0 auto;
-        padding-top: 350px;
-    }
-
-    .tela img{
-        width: 290px;
-        margin: 0 auto;
-        
-    }
-
-    .tela span{
-        text-align: center;
-        
-       
-    }
-
-    
-footer{
-    margin-top: 500px;
-}
-
-
-    
-}
-
-@media(min-width:834px) and (max-width: 1048px){
-
-    .container{
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav{
-       
-        width: 1140px;
-        height: 60px;     
-        position: fixed;
-        background-color: black;
-        
-    }
-
-    nav ul  {
-         
-    }
-
-    nav li{
-        margin-top: 20px;
-        
-    }
-
-    .logo{
-        padding-top: 100px;
-    }
-
-    .txt_sobre{
-        width: 100%;
-        font-size: 22px;
-        padding: 40px;
-        padding-bottom: 160px;
-    }
-
-    h4{
-        margin-bottom: 450px;
-        font-size: 2rem;
-        font-weight: 100;
-       }
-
-    .portifolio{
         flex-direction: column;
-        width: 100%;
-        padding-top: 240px;
-    }
-
-    .cards{
-        display:block;
-        margin: 80px auto;  
-        
-    }
-
-    .cards span{
-       margin: 0 auto;
-
-    }
-
-    .texto{
-        padding-top: 500px;
-        font-size: 22px;
-        margin: 50px;
-    }
-
-
-    .telas{
-        display: block;
-        margin: 30px;
-        
     }
 
     .tela{
-        margin: 0 auto;
-        margin-top: 150px;
-        
-    }
-
-    
-}
-
-@media screen and (min-width:1048px) and (max-width: 1920px){
-
-    .container{
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav{
-       
-        width: 1140px;
-        height: 60px;     
-        position: fixed;
-        background-color: black;
-        
-    }
-
-    nav ul  {
-         
-    }
-
-    nav li{
-        margin-top: 20px;
-        
-    }
-
-    .logo{
-        padding-top: 80px;
-       
-    }
-
-
-.logo img{
-    width: 250px;
-    height: 250px;
-}
-
-    h2{
-        font-size: 2rem;
-    }
-
-    .txt_sobre{
-        width: 100%;
-        font-size: 2rem;
-        padding: 40px;
-        padding-bottom: 160px;
-    }
-
-    h4{
-        margin-bottom: 60px;
-        font-size: 2rem;
-        font-weight: 100;
-       }
-
-    .portifolio{
-     
-        width: 100%;
-       
-    }
-
-   
-
-    
-    .cards span{
-       margin: 0 auto;
-
-    }
-
-    .texto{
-       
-        font-size: 22px;
         margin: 50px;
     }
 
+ 
 
-    .telas{
-        display:flex;
-        margin: 30px;
-        
-    }
-
-    .tela{
-        margin: 0 auto;
-        margin-top: 150px;
-        
-    }
-
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*960PX BREAKPOINT - Ajustando o texto para desktop*/
-/*@media (min-width:60em){
-
-
-    .legenda   { font-size:2em; padding:8px; }
-    .paginacao { margin:10px 0; }
-    .dot       { width:18px; height:18px; }  */
-
