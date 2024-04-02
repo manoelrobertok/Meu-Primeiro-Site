@@ -23,6 +23,7 @@ body{
 
 
 
+
 .container{
     background-image: linear-gradient(to left, #0c06068f, #140F2E,#0c06068f);
     margin: auto;
@@ -387,8 +388,9 @@ footer{
 
 
 /*1100PX BREAKPOINT - Ajustando o texto para desktop*/
-@media screen and (min-width:360px)
-and (max-width: 449px ){
+@media 
+(min-width >=360px)and
+(max-width <= 449px ){
 
     .container{
         display: block;
