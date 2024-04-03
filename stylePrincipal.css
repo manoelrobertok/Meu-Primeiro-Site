@@ -27,7 +27,7 @@ body{
 .container{
     background-image: linear-gradient(to left, #0c06068f, #140F2E,#0c06068f);
     margin: auto;
-    max-width: 1140px;
+    max-width: 1280px;
     box-shadow: 0 0 40px 0 #4b6e94;
     height: 100%;
     position: relative;  
@@ -38,7 +38,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background: black;
     position: fixed;
     width: 1140px;
     z-index: 1;
@@ -230,8 +230,8 @@ h2{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 300px;
-    margin-top: 20px;
+    height: 600px;
+    margin-top: 40px;
     
     
 }
@@ -239,9 +239,9 @@ h2{
 
 
 .cards{
-
+   
     width: 300px;
-    height: 300px;
+    height: 500px;
     transition: 0.3s;
     margin-top: 40px;
     border-radius: 10px;
@@ -252,8 +252,7 @@ h2{
     transform: scale(1.1, 1.1);
 }
 .cards img{
-    width: 300px;
-    height: 300px;
+    
     border-radius: 10px;
     margin-bottom: 30px;
 }
@@ -264,7 +263,7 @@ h2{
 }
 
 .texto {
-    margin-top: 220px;
+    margin: 20px;
     text-align: center;
     padding: 30px;
     font-size: 24px;
@@ -395,95 +394,188 @@ footer{
 
 
 
-/*1100PX BREAKPOINT - Ajustando o texto para desktop*/
+
 
 
 
 @media
-(width >= 360px) and 
-(width <= 1280px){
+(width >= 358px) and 
+(width <= 840px){}
+    .container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+       
+        width: 100%;
+        height: 80px;     
+          
+        background: none; 
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        
+    }
+
+    nav ul li {
+        display: flex;      
+        margin: auto; 
+    
+    }
+
+    nav a{
+        margin: auto;
+        padding: 20px;
+    }
+
+.logo{
+    padding-top: 100px;
+}
+
+.slideshow-container{
+    width: 100%;
+    
+}
+
+.slideshow-container img{
+    width: 100%;
+    height: 320px;
+}
+
+h2{
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+    
+    
+}
+.portifolio{
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+.portifolio img{
+    width: 100%;
+    height: 220px;
+    padding: 5px;
+}
+
+
+
+.portifolio span{
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+.texto{
+    margin-top: 730px;
+}
+.texto h3{
+    font-weight: 600;
+    font-size: 22px;
+   
+}
+
+
+/*
+.legenda   { font-size:2em; padding:8px; }
+.paginacao { margin:10px 0; }
+.dot       { width:18px; height:18px; }
+  */ 
+
+
+@media  
+(width >=770px) and
+(width <=1920px ){
 
     .container{
         display: block;
         justify-content: center;
         align-items: center;
-        width: 100%;
     }
 
-    nav{
-        
-        width: 100%;
-        height: 60px;     
-        padding: 10px;   
-        background: none; 
+    nav {
+       margin:0 auto;
+        width: 1280px;
+        height: 80px;     
+        margin: auto;
         position: fixed;
         background-color: black;
         
     }
 
-    nav ul li  {
-            margin: auto;
-            padding: 10px;
-    }
-
-    nav li a{
-        margin-top: 20px;
+    nav ul li{
         
-        
+        margin: 60px;
+              
     }
 
-
-    .txt_sobre{
-        width: 100%;
-        font-size: 22px;
-        padding: 40px;
-        padding-top: 160px;
-    }
-
-    h4{
-        margin-bottom: 45px;
-        font-size: 28px;
-        font-weight: 300;
-        padding: 20PX;
-        width: 80%;
-       }
-
-
-
-
-    .etapas{
-        flex-direction: column;       
-        width: 100%;
-
-    }
-
-    .cards{
-        margin: 100px;
-    }
-
-    .cards img{
-        display:block;
-        margin: 0 auto;  
-    
-    }
-
-    .cards span{
-       margin: 0 auto;
-
-    }
-
-
-    .texto{
-        width: 100%;
-        padding-top: 1250px;
-    }
-
-    .telas{
-        flex-direction: column;
-    }
-
-    .tela{
-        margin: 50px;
-    }
-
+.logo{
+    padding-top: 180px;
 }
+
+.slideshow-container{
+    width: 100%;
+    
+}
+
+.slideshow-container img{
+    width: 100%;
+    height: 650px;
+   
+}
+
+h2{
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 140px;
+}
+
+
+.portifolio{
+    display: flex;
+    
+  
+   
+   
+}
+
+.portifolio img{
+    
+    width: 100%;
+    height: 220px;
+    padding: 5px;
+}
+
+.portifolio span{
+    font-size: 18px;
+   
+ 
+}
+
+
+.texto{
+    margin-top: 730px;
+}
+.texto h3{
+    font-weight: 600;
+    font-size: 28px;
+   
+}
+
+
+/*
+.legenda   { font-size:2em; padding:8px; }
+.paginacao { margin:10px 0; }
+.dot       { width:18px; height:18px; }
+  */ 
+}
+
+
+
+
+
+ 
