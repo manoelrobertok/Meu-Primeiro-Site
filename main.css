@@ -203,7 +203,7 @@ h2{
 .txt_sobre{
     font-size: 1.5rem;
     margin: 0 auto;
-    width: 900px;
+    width: 90%;
     margin-bottom: 250px;
     
 }
@@ -211,7 +211,7 @@ h2{
 h4{
     font-size: 1.5rem;
     font-weight: 300;
-    width: 800px;
+    width: 90%;
     margin: 0 auto;
     background-color: #05529e63;
     border-radius: 20px;
@@ -336,10 +336,11 @@ h4{
 
 
 .texto {
-    margin: 20px;
-    text-align: center;
+    
+
     padding: 30px;
     font-size: 24px;
+    width: 100%;
     background-color: white;
     
 }
@@ -347,6 +348,7 @@ h4{
 .texto h3{
     color: black;
     font-weight: 600;
+    
     
 }
 
@@ -473,7 +475,7 @@ footer{
 
 @media
 (width >= 358px) and 
-(width <= 840px){}
+(width <= 950px){}
     .container{
         display: block;
         justify-content: center;
@@ -505,6 +507,40 @@ footer{
 .logo{
     padding-top: 100px;
 }
+
+
+.etapas{
+    flex-direction: column;
+   
+}
+
+.cardS{
+    margin: 70px;
+ 
+}
+
+.cardS span{
+    margin: 0 auto;
+   
+}
+
+
+
+.textoS{
+    margin-top: 1050px;
+}
+
+
+.telas{
+    flex-direction: column;
+    margin: 0 auto;
+   
+}
+.telas img{
+    margin-top: 80px;
+}
+
+
 
 .slideshow-container{
     width: 100%;
@@ -544,7 +580,7 @@ h2{
 
 
 .texto{
-    margin-top: 730px;
+    margin-top: 530px;
 }
 .texto h3{
     font-weight: 600;
@@ -561,7 +597,7 @@ h2{
 
 
 @media  
-(width >=770px) and
+(width >=950px) and
 (width <=1920px ){
 
     .container{
@@ -570,25 +606,104 @@ h2{
         align-items: center;
     }
 
-    nav {
-       margin:0 auto;
-        width: 1280px;
-        height: 80px;     
-        margin: auto;
+    nav{
+       
+        width: 1139px;
+        height: 80px;    
+        margin: 0 auto;          
+        background: none; 
         position: fixed;
-        background-color: black;
+        background-color: rgb(14, 13, 13);
         
     }
 
-    nav ul li{
-        
-        margin: 60px;
-              
+    nav ul li {
+        display: flex;      
+        margin: auto; 
+    
+    }
+
+    nav a{
+        margin: 0 auto;
+        padding: 20px;
     }
 
 .logo{
-    padding-top: 180px;
+    padding-top: 100px;
 }
+
+
+.etapas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 550px;
+    
+}
+
+
+.portifolio{
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.portifolio img{
+    width: 100%;
+    
+    
+}
+
+
+
+.portifolio span{
+    font-size: 28px;
+   
+}
+
+.cards{
+   
+    width: 300px;
+    height: 0px;
+    transition: 0.3s;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.cards:hover{
+    box-shadow: 0 0 20px 0 #05519e;
+    transform: scale(1.1, 1.1);
+}
+.cards img{
+    
+    border-radius: 10px;
+    
+}
+
+.cards span{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+.textoS{
+    margin-top: 1050px;
+}
+
+
+.telas{
+    display: flex;
+   
+}
+.telas img{
+    margin-top: 80px;
+}
+
+.textoS{
+    margin-top: 450px;
+}
+
+
 
 .slideshow-container{
     width: 100%;
@@ -597,58 +712,34 @@ h2{
 
 .slideshow-container img{
     width: 100%;
-    height: 650px;
-   
+    height: 550px;
 }
 
 h2{
     width: 100%;
-    font-size: 2rem;
-    margin-top: 140px;
-}
-
-
-.portifolio{
-    display: flex;
     
-  
-   
-   
+
 }
 
-.portifolio img{
-    
-    width: 100%;
-    height: 220px;
-    padding: 5px;
-}
 
-.portifolio span{
-    font-size: 18px;
-   
- 
+h4{
+    margin-top: 150px;
 }
 
 
 .texto{
-    margin-top: 730px;
+    margin-top: 230px;
+    
 }
 .texto h3{
     font-weight: 600;
-    font-size: 28px;
+    font-size: 22px;
    
 }
 
 
-/*
-.legenda   { font-size:2em; padding:8px; }
-.paginacao { margin:10px 0; }
-.dot       { width:18px; height:18px; }
-  */ 
+footer{
+    margin-top: 150px;
 }
 
-
-
-
-
- 
+}
