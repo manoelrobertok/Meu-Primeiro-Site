@@ -398,166 +398,92 @@ footer{
 /*1100PX BREAKPOINT - Ajustando o texto para desktop*/
 
 
-@media screen and (min-width:500px)
-and (max-width: 770px ){
+
+@media
+(width >= 360px) and 
+(width <= 1280px){
 
     .container{
         display: block;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     nav{
-       
-        width: 100%;
-        height: 80px;     
-        padding: 20px;   
-        background: none; 
-        position: fixed;
-        background-color: rgba(0, 0, 0, 0.829);
         
-    }
-
-    nav ul a{
-        display: flex;      
-        margin: 15%; 
-    }
-
-.logo{
-    padding-top: 100px;
-}
-
-.slideshow-container{
-    width: 490px;
-    
-}
-
-.slideshow-container img{
-    width: 100%;
-    height: 320px;
-}
-
-h2{
-    width: 360px;
-    margin: 100px auto;
-    
-    
-}
-.portifolio{
-    flex-direction: column;
-    margin: auto;
-    width: 450px;
-}
-
-.portifolio img{
-    width: 100%;
-    height: 220px;
-    padding: 5px;
-}
-
-
-
-.portifolio span{
-    font-size: 18px;
-    padding: 5px;
-}
-
-
-.texto{
-    margin-top: 730px;
-}
-.texto h3{
-    font-weight: 600;
-    font-size: 22px;
-   
-}
-
-
-/*
-.legenda   { font-size:2em; padding:8px; }
-.paginacao { margin:10px 0; }
-.dot       { width:18px; height:18px; }
-  */ 
-}
-
-@media screen and (min-width:770px)
-and (max-width: 1104px ){
-
-    .container{
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav{
-       
         width: 100%;
-        height: 80px;     
- 
+        height: 60px;     
+        padding: 10px;   
         background: none; 
         position: fixed;
         background-color: black;
         
     }
 
-    nav ul {
-              
+    nav ul li  {
+            margin: auto;
+            padding: 10px;
     }
 
-.logo{
-    padding-top: 180px;
-}
+    nav li a{
+        margin-top: 20px;
+        
+        
+    }
 
-.slideshow-container{
-    width: 770px;
-}
 
-.slideshow-container img{
-    width: 100%;
-    height: 450px;
-}
+    .txt_sobre{
+        width: 100%;
+        font-size: 22px;
+        padding: 40px;
+        padding-top: 160px;
+    }
 
-h2{
-    width: 360px;
-    margin: 100px auto;
-}
-.portifolio{
+    h4{
+        margin-bottom: 45px;
+        font-size: 28px;
+        font-weight: 300;
+        padding: 20PX;
+        width: 80%;
+       }
+
+
+
+
+    .etapas{
+        flex-direction: column;       
+        width: 100%;
+
+    }
+
+    .cards{
+        margin: 100px;
+    }
+
+    .cards img{
+        display:block;
+        margin: 0 auto;  
     
-    width: 770px;
-    margin: 0 auto;
+    }
+
+    .cards span{
+       margin: 0 auto;
+
+    }
+
+
+    .texto{
+        width: 100%;
+        padding-top: 1250px;
+    }
+
+    .telas{
+        flex-direction: column;
+    }
+
+    .tela{
+        margin: 50px;
+    }
+
 }
-
-.portifolio img{
-    width: 100%;
-    height: 220px;
-    padding: 5px;
-}
-
-.portifolio span{
-    font-size: 18px;
-    padding: 5px;
-}
-
-
-.texto{
-    margin-top: 130px;
-}
-.texto h3{
-    font-weight: 600;
-    font-size: 22px;
-   
-}
-
-
-/*
-.legenda   { font-size:2em; padding:8px; }
-.paginacao { margin:10px 0; }
-.dot       { width:18px; height:18px; }
-  */ 
-}
-
-
-
-
-
- 

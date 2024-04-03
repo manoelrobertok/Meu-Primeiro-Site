@@ -414,4 +414,11 @@ footer{
         margin: 50px;
     }
 
+
+
+@media
+(width >= 840px) and 
+(width <= 1290px){
+   
+}
 }
