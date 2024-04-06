@@ -179,15 +179,18 @@ h4{/*Sobre*/
     justify-content: center;
     margin-top: 10px;
     font-size: 2rem;
+    padding: 30px;
 }
 
 .textoS h3{
-    width: 960px;
-    margin-top: 20px;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 220px;
     text-align: center;
-    padding: 25px;
+    
+
     font-weight: 300;    
-    border-radius: 10px;
+
 }
 
 
@@ -214,6 +217,7 @@ h4{/*Sobre*/
     margin-bottom: 0px;
     box-shadow: 0 0 20px 0 #1c71c5;
     box-shadow: 0 0 30px 0 #1c71c5;
+    box-shadow: 0 0 40px 0 #1c71c5;
 
 }
 
@@ -396,12 +400,14 @@ h5{/*Sobre*/
 
 }
 
-.txt_sobre{
-    font-size: 2rem;
+.txt_sobre {
+    font-size: 1.8rem;
     margin: 0 auto;
-    width: 90%;    
-    font-weight: 300;
+    margin-bottom: 80px;
+    width: 100%;    
+    font-weight: 100;
     text-align: center;
+    padding: 10px;
   
     }
 
@@ -438,13 +444,7 @@ h4{/*Sobre*/
 
 .cardS span{
     margin: 0 auto;
-   
-}
-
-
-
-.textoS{
-    margin-top: 150px;
+    margin-top: 1340px;
    
 }
 
@@ -460,6 +460,14 @@ h4{/*Sobre*/
 }
 .telas img{
     margin-top: 80px;
+}
+
+.textoS h3{
+    font-size: 1.7rem;
+    margin: 0 auto;
+    width: 100%;    
+    font-weight: 100;
+    text-align: center;
 }
 
 
@@ -569,7 +577,11 @@ h4{/*Sobre*/
 
 
 .textoS{
-    margin-top: 150px;
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 90%;    
+    font-weight: 300;
+    text-align: center;
    
 }
 
