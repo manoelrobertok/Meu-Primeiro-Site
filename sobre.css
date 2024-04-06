@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: white;
-    text-align: center;
+  
 }
 
 body{
@@ -50,7 +50,7 @@ nav ul{
 nav li  {
  
     width:100% ;
-    margin: 25%;
+    margin: 35%;
     list-style: none;
     font-size: 1.5rem;
 }
@@ -95,19 +95,15 @@ nav a:hover{
 
 
 h1{
-    margin-top: 60px;
+    padding-top: 60px;
     font-weight: 400;
+    text-align: center;
   
 }
-
-
-
-
 
 .slideshow-container {
     
     width:960px; 
-
     position: relative;
     margin: auto;
     margin-top: 200px;
@@ -121,7 +117,8 @@ h1{
 }
 
 
-.slideshow img { 
+.slideshow img {
+    
   
     
 }
@@ -140,7 +137,7 @@ h1{
     font-weight: bold;
     font-size: 58px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+   
 }
 
 .next {
@@ -189,31 +186,30 @@ h1{
     animation-duration: 2s;
 }
 
-
-
-h2{
-    font-weight: 300;
+h6{
+    text-align: center;
     margin-top: 250px;
+    font-weight: 300;
+    margin-bottom: 150px;
     font-size: 2rem;
-    text-align: center
-   
+    text-align: center;
+}
+
+h5{/*Sobre*/
+    text-align: center;
+    margin-top: 250px;
+    font-weight: 300;
+    margin-bottom: 150px;
+    font-size: 2rem;
+    text-align: center;
+
 }
 
 
-
-
-.txt_sobre{
-    font-size: 2rem;
-    margin: 0 auto;
-    width: 90%;
-    margin-bottom: 200px;
-    font-weight: 300;
-    
-}
-
-h4{
+h4{/*Sobre*/
     font-size: 2rem;
     font-weight: 300;
+    text-align: center;
     width: 90%;
     margin: 0 auto;
     background-color: #05529e63;
@@ -222,22 +218,96 @@ h4{
 }
 
 
+.portifolio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+        
+}
+
+.cards{
+    
+    margin-bottom: 380px;
+    transition: 0.3s;
+    text-align: center;
+}   
+
+
+.cards:hover{
+    transform: scale(1.1, 1.1);
+}
+
+
+.cards img{    
+    
+    border-radius: 10px;    
+    box-shadow: 0 0 20px 0 #05519e;
+    box-shadow: 0 0 30px 0 #05519e;
+    
+}
+
+.cards span{
+    font-size: 2rem;
+    font-weight: 300;
+    
+    
+}
+
+
+
+.texto {
+    
+    padding: 30px;
+    font-size: 24px;
+    width: 100%;
+    background-color: white;
+    
+    
+}
+
+.texto h3{
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    
+    
+}
+
+
+.txt_sobre{
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 150px;
+    font-weight: 300;
+    text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
 .etapas{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 300px;
-    padding-top: 200px; 
+    padding-top: 20px; 
     margin: 0 auto;
+    text-align: center;
       
 }
 
 .cardS{
     width: 300px;
     height: 300px;
-    margin: 180px;
-    
     border-radius: 50%;
 }
 .cardS:hover{
@@ -253,46 +323,15 @@ h4{
 .cardS span{
     margin: 60px;
     font-size: 2rem;
-
-}
-
-
-.portifolio {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 600px;
-    margin-top: 40px;
     
-    
+
 }
 
 
 
-.cards{
-   
-    width: 300px;
-    height: 500px;
-    transition: 0.3s;
-    margin-top: 40px;
-    border-radius: 10px;
-}
 
-.cards:hover{
-    box-shadow: 0 0 20px 0 #05519e;
-    transform: scale(1.1, 1.1);
-}
-.cards img{
-    
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
 
-.cards span{
-    font-size: 2rem;
-    font-weight: 300;
-}
+
 
 
 .textoS{
@@ -338,22 +377,7 @@ h4{
 }
 
 
-.texto {
-    
 
-    padding: 30px;
-    font-size: 24px;
-    width: 100%;
-    background-color: white;
-    
-}
-
-.texto h3{
-    color: black;
-    font-weight: 600;
-    
-    
-}
 
 
 
