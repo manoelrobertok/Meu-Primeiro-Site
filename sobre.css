@@ -101,99 +101,6 @@ h1{
   
 }
 
-.slideshow-container {
-    
-    width:960px; 
-    position: relative;
-    margin: auto;
-    margin-top: 200px;
-
-}
-
-.slideshow {
-    display: none;
-    margin: auto;
-    
-}
-
-
-.slideshow img {
-    
-  
-    
-}
-
-.prev,
-.next {
-    display: flex;
-    cursor: pointer;
-    position: absolute;
-    opacity: 0.4;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 26px;
-    color: white;
-    font-weight: bold;
-    font-size: 58px;
-    transition: 0.6s ease;
-   
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-    color: white;
-    opacity: 1;
-}
-
-
-.paginacao { 
-  
-    width:100%; 
-    float:left;
-    text-align: center;
-
-}
-
-.dot {
-
-    cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin:  5px;
-    border-radius: 50px;
-    background-color: #063261;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.ativo,
-.dot:hover {
-    background-color: white;
-    box-shadow: 0 0 10px 0 black;
-}
-
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s;
-}
-
-h6{
-    text-align: center;
-    margin-top: 250px;
-    font-weight: 300;
-    margin-bottom: 150px;
-    font-size: 2rem;
-    text-align: center;
-}
 
 h5{/*Sobre*/
     text-align: center;
@@ -204,6 +111,16 @@ h5{/*Sobre*/
     text-align: center;
 
 }
+
+.txt_sobre{
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 100px;
+    font-weight: 300;
+    text-align: center;
+    }
+
 
 
 h4{/*Sobre*/
@@ -217,91 +134,13 @@ h4{/*Sobre*/
     padding: 5px;
 }
 
-
-.portifolio{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    padding-top: 10px;
-        
-}
-
-.cards{
-    
-    margin-bottom: 380px;
-    transition: 0.3s;
-    text-align: center;
-}   
-
-
-.cards:hover{
-    transform: scale(1.1, 1.1);
-}
-
-
-.cards img{    
-    
-    border-radius: 10px;    
-    box-shadow: 0 0 20px 0 #05519e;
-    box-shadow: 0 0 30px 0 #05519e;
-    
-}
-
-.cards span{
-    font-size: 2rem;
-    font-weight: 300;
-    
-    
-}
-
-
-
-.texto {
-    
-    padding: 30px;
-    font-size: 24px;
-    width: 100%;
-    background-color: white;
-    
-    
-}
-
-.texto h3{
-    color: black;
-    font-weight: 600;
-    text-align: center;
-    
-    
-}
-
-
-.txt_sobre{
-    font-size: 2rem;
-    margin: 0 auto;
-    width: 90%;
-    padding-bottom: 150px;
-    font-weight: 300;
-    text-align: center;
-    }
-
-
-
-
-
-
-
-
-
-
 .etapas{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding-top: 20px; 
     margin: 0 auto;
-    text-align: center;
+    
       
 }
 
@@ -309,29 +148,30 @@ h4{/*Sobre*/
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    
+   
 }
 .cardS:hover{
     box-shadow: 0 0 20px 0 #05519e;
 }
+
+
 .cardS img{
+
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin-bottom: 30px;
+  
 }
 
 .cardS span{
     margin: 60px;
     font-size: 2rem;
+    padding: 30px;
+    
     
 
 }
-
-
-
-
-
-
 
 
 .textoS{
@@ -343,9 +183,9 @@ h4{/*Sobre*/
 
 .textoS h3{
     width: 960px;
-    margin-top: 280px;
+    margin-top: 20px;
     text-align: center;
-    padding: 50px;
+    padding: 25px;
     font-weight: 300;    
     border-radius: 10px;
 }
@@ -368,11 +208,12 @@ h4{/*Sobre*/
 
 .tela img{
     
-    width: 280px;
-    height: 260px;
+    width: 380px;
+    height: 320px;
     border-radius: 10px;
     margin-bottom: 0px;
     box-shadow: 0 0 20px 0 #1c71c5;
+    box-shadow: 0 0 30px 0 #1c71c5;
 
 }
 
@@ -501,8 +342,8 @@ footer{
 
 
 @media
-(width >= 358px) and 
-(width <= 950px){}
+(width >= 350px) and 
+(width <= 750px){
     .container{
         display: block;
         justify-content: center;
@@ -512,8 +353,7 @@ footer{
     nav{
        
         width: 100%;
-        height: 80px;     
-          
+        height: 80px;  
         background: none; 
         position: fixed;
         background-color: rgb(0, 0, 0);
@@ -536,13 +376,63 @@ footer{
 }
 
 
+
+
+h1{
+    padding-top: 60px;
+    font-weight: 400;
+    text-align: center;
+  
+}
+
+
+h5{/*Sobre*/
+    text-align: center;
+    margin-top: 250px;
+    font-weight: 300;
+    margin-bottom: 150px;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.txt_sobre{
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 90%;    
+    font-weight: 300;
+    text-align: center;
+  
+    }
+
+
+
+h4{/*Sobre*/
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #05529e63;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+
+
+
+
+
 .etapas{
     flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    
+
    
 }
 
 .cardS{
-    margin: 70px;
+    margin: 170px;
  
 }
 
@@ -554,13 +444,18 @@ footer{
 
 
 .textoS{
-    margin-top: 1050px;
+    margin-top: 150px;
+   
 }
 
 
 .telas{
     flex-direction: column;
     margin: 0 auto;
+    padding-top: 150px;
+    text-align: center;
+
+
    
 }
 .telas img{
@@ -569,64 +464,11 @@ footer{
 
 
 
-.slideshow-container{
-    width: 100%;
-    
 }
 
-.slideshow-container img{
-    width: 100%;
-    height: 320px;
-}
-
-h2{
-    width: 100%;
-    margin: 100px auto;
-    padding: 20px;
-    
-    
-}
-.portifolio{
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
-}
-
-.portifolio img{
-    width: 100%;
-    height: 220px;
-    padding: 5px;
-}
-
-
-
-.portifolio span{
-    font-size: 18px;
-    padding: 5px;
-}
-
-
-.texto{
-    margin-top: 530px;
-}
-.texto h3{
-    font-weight: 600;
-    font-size: 22px;
-   
-}
-
-
-/*
-.legenda   { font-size:2em; padding:8px; }
-.paginacao { margin:10px 0; }
-.dot       { width:18px; height:18px; }
-  */ 
-
-
-@media  
-(width >=950px) and
-(width <=1920px ){
-
+@media
+(width >= 750px) and 
+(width <= 1140px){
     .container{
         display: block;
         justify-content: center;
@@ -635,12 +477,11 @@ h2{
 
     nav{
        
-        width: 1139px;
-        height: 80px;    
-        margin: 0 auto;          
+        width: 100%;
+        height: 80px;  
         background: none; 
         position: fixed;
-        background-color: rgb(14, 13, 13);
+        background-color: rgb(0, 0, 0);
         
     }
 
@@ -651,7 +492,7 @@ h2{
     }
 
     nav a{
-        margin: 0 auto;
+        margin: auto;
         padding: 20px;
     }
 
@@ -660,113 +501,247 @@ h2{
 }
 
 
-.etapas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 550px;
-    
+
+
+h1{
+    padding-top: 60px;
+    font-weight: 400;
+    text-align: center;
+  
 }
 
 
-.portifolio{
-    flex-direction: row;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.portifolio img{
-    width: 100%;
-    
-    
-}
-
-
-
-.portifolio span{
-    font-size: 28px;
-   
-}
-
-.cards{
-   
-    width: 300px;
-    height: 0px;
-    transition: 0.3s;
-    margin-top: 0px;
-    border-radius: 10px;
-}
-
-.cards:hover{
-    box-shadow: 0 0 20px 0 #05519e;
-    transform: scale(1.1, 1.1);
-}
-.cards img{
-    
-    border-radius: 10px;
-    
-}
-
-.cards span{
-    font-size: 24px;
+h5{/*Sobre*/
+    text-align: center;
+    margin-top: 250px;
     font-weight: 300;
+    margin-bottom: 150px;
+    font-size: 2rem;
+    text-align: center;
+
 }
+
+.txt_sobre{
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 90%;    
+    font-weight: 300;
+    text-align: center;
+  
+    }
+
+
+
+h4{/*Sobre*/
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #05529e63;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+
+
+
+
+
+.etapas{
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    
+
+   
+}
+
+.cardS{
+    margin: 170px;
+ 
+}
+
+.cardS span{
+    margin: 0 auto;
+   
+}
+
 
 
 .textoS{
-    margin-top: 1050px;
+    margin-top: 150px;
+   
 }
 
 
 .telas{
-    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 150px;
+    text-align: center;
+
+
    
 }
 .telas img{
     margin-top: 80px;
 }
 
-.textoS{
-    margin-top: 450px;
+
+
 }
 
+@media
+(width >= 1140px) and 
+(width <= 1920px){
+    .container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
 
+    nav{
+       
+        width: 1140px;
+        height: 80px;  
+        background: none; 
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        margin: 0 auto;
+        
+    }
 
-.slideshow-container{
-    width: 100%;
+    nav ul li {
+        display: flex;      
+        margin: auto; 
     
-}
+    }
 
-.slideshow-container img{
-    width: 100%;
-    height: 550px;
-}
+    nav a{
+        margin: auto;
+        padding: 20px;
+    }
 
-h2{
-    width: 100%;
-    
-
-}
-
-
-h4{
-    margin-top: 150px;
+.logo{
+    padding-top: 100px;
 }
 
 
-.texto{
-    margin-top: 230px;
-    
+
+
+h1{
+    padding-top: 60px;
+    font-weight: 400;
+    text-align: center;
+  
 }
-.texto h3{
-    font-weight: 600;
-    font-size: 22px;
+
+
+h5{/*Sobre*/
+    text-align: center;
+    margin-top: 250px;
+    font-weight: 300;
+    margin-bottom: 150px;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.txt_sobre{
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 90%;    
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 160px;
+  
+    }
+
+
+
+h4{/*Sobre*/
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #05529e63;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+
+
+
+
+
+.etapas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.cardS{
+    margin-top:200px ;
+    text-align: center;
+ 
+}
+
+.cardS span{
+    margin: 0 auto;
+    text-align: center;
    
 }
 
 
-footer{
-    margin-top: 150px;
+
+.textoS{
+    padding-top: 250px;
+   
+}
+
+
+.telas{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 150px;
+
+
+   
+}
+.telas img{
+    margin-top: 180px;
+    
+}
+
+.telas span{
+   
+    
 }
 
 }
+
+
+
+
+
+/*
+.legenda   { font-size:2em; padding:8px; }
+.paginacao { margin:10px 0; }
+.dot       { width:18px; height:18px; }
+  */ 
+
+
+
+
+/*
+.legenda   { font-size:2em; padding:8px; }
+.paginacao { margin:10px 0; }
+.dot       { width:18px; height:18px; }
+  */ 
+
